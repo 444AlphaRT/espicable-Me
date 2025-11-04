@@ -18,3 +18,4 @@
 ---
 
 ## קישור למסמך הרכיבים של הפרויקט
+https://github.com/444AlphaRT/espicable-Me/blob/main/espicable.md
