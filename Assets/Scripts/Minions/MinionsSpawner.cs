@@ -29,7 +29,6 @@ public class MinionSpawner : MonoBehaviour
             return;
         }
 
-        // Get world-space corners of the camera view
         Vector3 bottomLeft = cam.ViewportToWorldPoint(new Vector3(0f, 0f, cam.nearClipPlane));
         Vector3 topRight = cam.ViewportToWorldPoint(new Vector3(1f, 1f, cam.nearClipPlane));
 
@@ -38,7 +37,6 @@ public class MinionSpawner : MonoBehaviour
         float minY = bottomLeft.y + margin;
         float maxY = topRight.y - margin;
 
-        // Spawn at most as many minions as the array can track
         int count = minionsToSpawn;
         if (ResourceManager.Instance != null)
         {
@@ -47,7 +45,6 @@ public class MinionSpawner : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            // If this minion was already collected in a previous run, skip spawning it
             if (ResourceManager.Instance != null &&
                 ResourceManager.Instance.collectedMinions[i])
             {
