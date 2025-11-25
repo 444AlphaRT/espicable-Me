@@ -4,10 +4,10 @@
 - רעות בכור  
 - רון אמסלם  
 - תומר גל 
-https://alpha444rt.itch.io/espicable-me
 
 **קישור למאגרים של הצוות:**  
 🔗 https://github.com/orgs/444AlphaRT/repositories
+https://alpha444rt.itch.io/espicable-me
 
 ---
 
