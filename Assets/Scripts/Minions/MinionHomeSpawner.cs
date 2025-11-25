@@ -34,12 +34,12 @@ public class MinionHomeSpawner : MonoBehaviour
 
         // Camera bounding box in world units
         Vector3 bottomLeft = cam.ViewportToWorldPoint(new Vector3(0f, 0f, cam.nearClipPlane));
-        Vector3 topRight   = cam.ViewportToWorldPoint(new Vector3(1f, 1f, cam.nearClipPlane));
+        Vector3 topRight = cam.ViewportToWorldPoint(new Vector3(1f, 1f, cam.nearClipPlane));
 
         float minX = bottomLeft.x + margin;
-        float maxX = topRight.x   - margin;
+        float maxX = topRight.x - margin;
         float minY = bottomLeft.y + margin;
-        float maxY = topRight.y   - margin;
+        float maxY = topRight.y - margin;
 
         // Spawn only minions that were actually collected
         bool[] collected = ResourceManager.Instance.collectedMinions;

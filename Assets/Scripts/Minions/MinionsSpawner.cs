@@ -31,12 +31,12 @@ public class MinionSpawner : MonoBehaviour
 
         // Get world-space corners of the camera view
         Vector3 bottomLeft = cam.ViewportToWorldPoint(new Vector3(0f, 0f, cam.nearClipPlane));
-        Vector3 topRight   = cam.ViewportToWorldPoint(new Vector3(1f, 1f, cam.nearClipPlane));
+        Vector3 topRight = cam.ViewportToWorldPoint(new Vector3(1f, 1f, cam.nearClipPlane));
 
         float minX = bottomLeft.x + margin;
-        float maxX = topRight.x   - margin;
+        float maxX = topRight.x - margin;
         float minY = bottomLeft.y + margin;
-        float maxY = topRight.y   - margin;
+        float maxY = topRight.y - margin;
 
         // Spawn at most as many minions as the array can track
         int count = minionsToSpawn;
